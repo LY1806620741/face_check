@@ -9,7 +9,7 @@ from tkinter import simpledialog,messagebox
 
 class FaceCheck:
     def __init__(self):
-        self.workPath=Path()
+        self.workPath=Path(sys.path[0])
         """工作路径"""
         self.dataPath=self.workPath/"data"
         self.classifierFile=self.workPath/"haarcascade_frontalface_default.xml"
